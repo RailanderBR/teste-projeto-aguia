@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: happy-school;
-    src: url(/assets/font/Happy\ School.ttf);
+    src: url(./assets/font/Happy\ School.ttf);
 }
 
 @font-face {
     font-family:janda-bubble;
-    src: url(/assets/font/JandaManateeBubble.ttf);
+    src: url(./assets/font/JandaManateeBubble.ttf);
 }
 /* Zera todas as margens e paddings dos elementos e define fonte e cor padrão */
 * {

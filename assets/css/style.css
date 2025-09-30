@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: happy-school;
-    src: url("/assets/font/Happy\ School.ttf");
+    src: url("./assets/font/Happy\ School.ttf");
 }
 
 @font-face {
     font-family:janda-solid;
-    src: url("/assets/font/JandaManateeSolid.ttf");
+    src: url("./assets/font/JandaManateeSolid.ttf");
 }
 @font-face {
     font-family:heroes-legend;
-    src: url("/assets/font/Heroes\ Legend.ttf");
+    src: url("./assets/font/Heroes\ Legend.ttf");
 }
 @font-face {
     font-family:comic-relief;
-    src: url("/assets/font/ComicRelief-Bold.ttf");
+    src: url("./assets/font/ComicRelief-Bold.ttf");
 }
 
 @font-face {
     font-family:cherry-bomb;
-    src: url("/assets/font/CherryBombOne-Regular.ttf");
+    src: url("./assets/font/CherryBombOne-Regular.ttf");
 }
 
 /* Reset básico para remover margens e espaçamentos padrão */

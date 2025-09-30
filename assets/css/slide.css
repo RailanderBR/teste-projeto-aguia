@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: happy-school;
-    src: url(/assets/font/Happy\ School.ttf);
+    src: url(./assets/font/Happy\ School.ttf);
 }
 
 @font-face {
     font-family:janda-bubble;
-    src: url(/assets/font/JandaManateeBubble.ttf);
+    src: url(./assets/font/JandaManateeBubble.ttf);
 }
 /* Container da galeria de verificação */
 #galeria-verificacao {
     margin: 50px 0; /* espaçamento acima e abaixo da galeria */
-    background-image:url(/assets/image/template/fundo-sky.png);
+    background-image:url(./assets/image/template/fundo-sky.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
