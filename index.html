@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- CONFIGURAÇÕES BÁSICAS DA PÁGINA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO DA ABA -->
+    <title>Escola Águia Azul</title>
+
+    <!-- ÍCONES DA ABA -->
+    <link rel="icon" type="image/x-icon" href="./assets/aguia_favicon (2).ico">
+
+    <!-- FONTES E ESTILOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Libre+Baskerville&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap" rel="stylesheet">
+    
+    <!-- ÍCONES DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="./assets/css/slide.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="container-fluid" >
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+          <!-- LOGO DA ESCOLA -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/image/aguia-azul.png" alt="logo aguia-azul" width="70px" height="70">
+          </a>
+
+          <!-- BOTÃO HAMBÚRGUER MOBILE -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- LINKS DO MENU -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <h6><a class="nav-link active" href="./index.html">Pagina Inicial</a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link active" href="./sobre.html">Sobre a escola</a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link active" href="./contato.html">Contato</a></h6>
+              </li>
+            </ul>
+
+            <!--LOGO CLIPESCOLA-->
+            <a href="https://www.clipescola.com/" target="_blank"><img src="./assets/image/ClipEscola_logo.png" alt="logo-mackenzie" width="50" height="50"></a>
+
+            <!-- LOGO MACKENZIE -->
+            <a href="https://sistemasdeensino.mackenzie.br/material-didatico" target="_blank"><img src="./assets/image/mackenzie-logo.png" alt="logo-mackenzie" width="auto" height="70"></a>
+
+            <form class="d-flex" role="search" action="index.html" method="get">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" name="termo">
+              <button class="btn bs-btn-bg" type="submit">Buscar</button>
+            </form>
+          </div>
+      </nav>
+    </header>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+  <main>
+
+    <!-- GALERIA DE FOTOS --><!--1600×500 px (proporção 16:5, tipo banner).Isso garante boa qualidade em telas grandes.-->
+    <section id="galeria-verificacao">
+        <div class="d-flex flex-wrap justify-content-center" id="thumbs"></div>
+        <div class="text-center my-3">
+            <img id="mainImage" alt="mackenzie" src="./assets/image/template/mackenzie.png" style="max-width:90%; max-height:500px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,.3);">
+        </div>
+        <div class="text-center mb-3">
+            <button class="btn btn-primary" id="btnPrev"><</button>
+            <button class="btn btn-primary" id="btnNext">></button>
+        </div>
+        <div class="text-center mb-3">
+            <span id="progress">1 / 5</span>
+        </div>
+    </section>
+
+
+    <!-- MATRÍCULAS -->
+  <div class="container text-center">
+    <h1 id="enrollment" style="margin-bottom: 1rem; margin-top: -3rem; text-align: center; color:#120a53">
+      "Abrir nossas asas e voar para nossos sonhos.""
+    </h1>
+  </div>
+
+<div class="container" id="enrollment">
+  <div class="rounded float">
+    <!-- Coluna da imagem -->
+    <div class="col-md-12 text-center" >
+      <img src="./assets/image/template/matriculas-abertas.png" 
+           alt="Matrículas abertas" 
+           class="img-fluid" 
+           style="max-width: 380px; height: auto; border-radius: 5px;">
+    </div>
+
+    <!-- Coluna do texto -->
+     <br><br>
+    <div class="col-md-12" id="matricula-text" style="font-size:xx-large;">
+      <div class="row justify-content-center">
+      <p >
+        Mais que uma escola, um projeto de vida. Invista na formação completa do seu filho no Colégio Mackenzie, onde a excelência acadêmica encontra a fé. 
+        <a class="matricula-forms" href="" style="color:#120a53">Matrículas abertas!</a>
+      </div>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- FRASE DE IMPACTO -->
+    <div class="separation-aguia"><h1 id="list-menu" style="color:#FFFF">Escola Águia Azul</h1>
+      <h2>Educação Infantil e Fundamental</h2>
+    </div>
+
+    <!-- GALERIA DE IMAGENS FIXAS -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/Cognitivo.png" alt="Foto-1"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/Aprendendo.jpg" alt="Foto-2"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/Maternal.png" alt="Foto-3"></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/dia-do-indio.png" alt="Foto-4" height="70px"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/judo.png" alt="Foto-5"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/bobbie-goods.png" alt="Foto-6"></div></div>
+        </div>
+        <div class="row">
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/branca-de-neve.png" alt="Foto-7"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/dia-da-agua.png" alt="Foto-8"></div></div>
+            <div class="col"><div class="slide"><img id="aguia-photo" src="./assets/image/pascoa.png" alt="Foto-9"></div></div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE TEXTO INFORMATIVO -->
+    <section>
+        <div class="separation" style="height: 55px">
+        <h1 class="article text-center" style="color:#FFFF">Educação Socio-Interacionista</h1>
+        </div>
+<p style="font-family:janda-solid; padding:2rem; letter-spacing: 1px;">Descubra a Educação Mackenzie: onde cada descoberta é feita com propósito!
+
+Na Educação Infantil e nos Anos Iniciais, oferecemos muito mais do que livros — criamos momentos de conexão, brincadeira e encantamento. Aqui, a criança cresce feliz, desenvolvendo o corpo, o pensamento, o coração e a capacidade de se relacionar bem com os outros.
+
+Usamos histórias que encantam, brincadeiras que ensinam e atividades que fazem sentido para o dia a dia dos pequenos. Cada passo é pensado para que aprender seja natural, cheio de significado e diversão.
+
+A alfabetização acontece de verdade, com atenção ao som das letras e à magia das palavras que ganham vida. Tudo isso aparece entrelaçado com valores que inspiram respeito, amizade, alegria e responsabilidade — porque ensinar com princípios é educar para a vida.
+
+Seja na roda de conversa, no jogo, na história inventada ou na construção de ideias com tecnologia, tudo aqui é um convite para pensar, criar e crescer. O Mackenzie aproxima o que se aprende na sala com o que se vive na vida, sem deixar a alma de fora.
+
+Convidamos você a descobrir uma educação que prepara o hoje e inspira o amanhã — com leveza, respeito, criatividade e coração. Vem conhecer!</p>
+              <br>
+        <div class="separation" style="height: 57px"><h2 class="text-center my-4" style="color:#FFFF">Venha conferir nossa rotina diária!</h2></div>
+
+        <!-- SEÇÃO DE VÍDEOS -->
+        
+        <div class="videos-section py-5">
+    <div class="container text-center" id="videos-aguia" style="font-family: comic-relief;">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+                <div class="video-card h-300 shadow-sm">
+                    <div class="ratio" style="--bs-aspect-ratio: 125%;"> <!-- mais alto -->
+                        <video controls muted loop class="card-video-top">
+                            <source src="./assets/videos/Entrada.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="comic-relief">Acolhimento Águia</h5>
+                        <p class="card-text text-muted">Veja como acolhemos nossas crianças todos os dias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="video-card h-100 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <video controls muted loop class="card-video-top">
+                            <source src="./assets/videos/Atividade Pré.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Atividade de desenvolvimento</h5>
+                        <p class="card-text text-muted">Atividade de Desenvolvimento cognitivo e de percepção.</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col">
+                <div class="video-card h-100 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <video controls muted loop class="card-video-top">
+                            <source src="./assets/videos/leitura(MP4).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Leitura</h5>
+                        <p class="card-text text-muted">Aprenda de forma lúdica com nossos pequenos leitores.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col">
+                <div class="video-card h-100 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <video controls muted class="card-video-top">
+                            <source src="./assets/videos/pre(MP4).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">A-E-I-O-U</h5>
+                        <p class="card-text text-muted">Apresentação especial das vogais com nossos alunos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="video-card h-100 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <video controls muted loop class="card-video-top">
+                            <source src="./assets/videos/Páscoa(MP4).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Canção de Páscoa</h5>
+                        <p class="card-text text-muted">Uma doce melodia para celebrar a Páscoa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="video-card h-100 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <video controls muted loop class="card-video-top">
+                            <source src="./assets/videos/gincana.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gincana Animada</h5>
+                        <p class="card-text text-muted">Momentos de diversão e trabalho em equipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- SEÇÃO DE METODOLOGIA -->
+    <section class="method container my-5" style="letter-spacing:1px">
+        <h1 class="subtitle-aguia">"EDUCAÇÃO, FERRAMENTA PARA TRANSFORMAÇÃO"</h1>
+        <h2 class="subtitle-aguia">Metodologia e Filosofia</h2>
+        <div class="methodology">
+          <li>✝️🤝 Base de valores: visão cristã, com princípios de respeito, amizade e responsabilidade.</li>
+          <li>🧩✨ Aprendizagem ativa: aluno participa, reflete e interage; não é só ouvir, é experimentar.</li>
+          <li>📅🌱 Conteúdo com sentido: organizado e ligado ao dia a dia da criança.</li>
+          <li>🔤📖 Alfabetização fônica: leitura e escrita a partir da relação entre sons e letras.</li>
+          <li>📚🎧🎲 Materiais variados: livros, histórias auditivas e recursos lúdicos impressos.</li>
+          <li>📖🌟 Literatura Viva: histórias que despertam imaginação e estimulam leitura.</li>
+          <li>🔢🎮 Linguagem e matemática na prática: sempre com jogos e atividades que envolvem a criança.</li>
+          <li>💻🚀 Tecnologia e criatividade: espaços maker, projetos STEAM Kids e metodologias divertidas.</li>
+          <li>🧠💓🤸 Formação integral: trabalha corpo, pensamento, emoções e convivência.</li>
+        </div>
+      </section>
+        <div class="separation"></div>
+
+
+  </main>
+
+  <!-- ==================== RODAPÉ ==================== -->
+  <footer>
+      <p>&copy; 2025 Colégio Águia Azul. Todos os direitos reservados.</p>
+      <p>✨ “Educar é preparar para o hoje e inspirar o amanhã.”✨</p>
+      <address>R. Gibraltar, 314 - Vila Santa Maria, Itapecerica da Serra - SP, 06856-740</address>
+      <a id="contact" href="tel:+551146679466">Ligar para (11) 4667-9466</a>
+      <!-- Ícones de redes sociais -->
+      <div class="column">
+
+    <a class="col-1" href="https://www.instagram.com/aguiazull/" target="_blank">
+      <i class="bi bi-instagram" style="font-size: 1.5rem; color: aliceblue;"></i>
+    </a>
+
+    <a class="col-1" href="https://www.facebook.com/aguiazullescola/?locale=pt_BR" target="_blank">
+      <i class="bi bi-facebook" style="font-size: 1.5rem; color: aliceblue;"></i>
+    </a>
+
+    <a  class="col-1" href="https://wa.me/5511960179775" target="_blank">
+      <i class="bi bi-whatsapp" style="font-size: 1.5rem; color: aliceblue;"></i>
+    </a>
+
+      <!-- BOTÃO MODAL VISITA -->
+      <div id="local" class="container text-center mb-5">
+        <div class="col-12">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Venha nos visitar</button>
+      </div>
+      <br>
+
+      <!-- MODAL DE LOCALIZAÇÃO -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Faça uma visita!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe
+                      style="width: 100%"
+                      height="500"
+                      id="gmap_canvas"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7307.2726338290195!2d-46.80357162541683!3d-23.688960466290954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce52e42a22825d%3A0xded99717e2e86b87!2sEscola%20%C3%81guia%20Azul!5e0!3m2!1spt-BR!2sus!4v1757365906369!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    >
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/formulario.js"></script>
+  <script src="./assets/js/search.js"></script>
+</body>
+</html>
